@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherinTokyo</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        line-height: 48px;
+      }
+      .currentDegreeCity {
+        color: #1a64d6;
+      }
+      .dayDegree {
+        font-weight: lighter;
+      }
+      .nightDegree {
+        font-weight: bold;
+      }
+      ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px 0;
+        border-radius: 10px;
+        max-width: 400px;
+        transition: all 200ms ease-in-out;
+      }
+      li:hover {
+        background-color: #fefbef;
+        border-radius: 4px;
+        transition: all 200ms ease-in-out;
+      }
+      .days {
+        font-weight: bold;
+        padding: 20px;
+      }
+      .degree {
+        color: #000000;
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+        color: #ffffff;
+        background-color: #1a64d6;
+        padding: 18px 30px;
+        border: 1px solid #1a64d6;
+        border-radius: 30px 30px 30px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #ffffff;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+      .developerName {
+        text-align: center;
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+        margin: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤<br />
+      <div class="currentDegreeCity">Currently 21° in Tokyo</div>
+      <span class="dayDegree">13° / </span><span class="nightDegree">23°</span>
+    </h1>
+    <ul>
+      <li>
+        <div class="days">🌧Tomorrow</div>
+        <div class="degree">
+          <span class="dayDegree">10° /</span
+          ><span class="nightDegree"> 22°</span>
+        </div>
+      </li>
+      <li>
+        <div class="days">🌥Saturday</div>
+        <div class="degree">
+          <span class="dayDegree">15° /</span
+          ><span class="nightDegree"> 17°</span>
+        </div>
+      </li>
+      <li>
+        <div class="days">☀️Sunday</div>
+        <div class="degree">
+          <span class="dayDegree">25° /</span
+          ><span class="nightDegree"> 28°</span>
+        </div>
+      </li>
+    </ul>
+    <button name="button">Change city</button>
+    <div class="developerName">Coded by Gülsah Durmaz</div>
+  </body>
+</html>
